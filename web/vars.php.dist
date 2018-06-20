@@ -1,0 +1,4 @@
+<?php
+
+$merchantId = 'your merchant ID here';
+$token = 'your token here';

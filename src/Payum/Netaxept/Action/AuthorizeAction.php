@@ -58,12 +58,13 @@ class AuthorizeAction implements ActionInterface, ApiAwareInterface, GatewayAwar
             throw new CancelledException('The user cancelled the transaction in the payment window.');
         }
 
-        if ($parameters['responseCode'] !== 'OK') {
+        if (strtolower($parameters['responseCode']) !== 'ok') {
             throw new \LogicException('Unknown responseCode value from Netaxept.');
         }
 
         $model = ArrayObject::ensureArrayObject($request->getModel());
-        $this->api->processTransaction((array) $model, Api::OPERATION_AUTH);
+
+        return $this->api->authorize((array) $model);
     }
 
     /**

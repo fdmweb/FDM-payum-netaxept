@@ -17,8 +17,6 @@ use FDM\Netaxept\Api;
 use FDM\Payum\Netaxept\Model\Payment;
 use FDM\Payum\Netaxept\Model\TransactionInterface;
 use Payum\Core\Action\ActionInterface;
-use Payum\Core\ApiAwareInterface;
-use Payum\Core\ApiAwareTrait;
 use Payum\Core\Bridge\Spl\ArrayObject;
 use Payum\Core\Exception\RequestNotSupportedException;
 use Payum\Core\Model\PaymentInterface;
@@ -27,10 +25,8 @@ use Payum\Core\Request\Convert;
 /**
  * @property Api $api
  */
-class ConvertPaymentAction implements ActionInterface, ApiAwareInterface
+class ConvertPaymentAction implements ActionInterface
 {
-    use ApiAwareTrait;
-
     /**
      * @var bool
      */
@@ -49,7 +45,6 @@ class ConvertPaymentAction implements ActionInterface, ApiAwareInterface
      */
     public function __construct(bool $letNetaxeptGenerateTransactionId = true, string $transactionIdTemplate = null)
     {
-        $this->apiClass = Api::class;
         $this->letNetaxeptGenerateTransactionId = $letNetaxeptGenerateTransactionId;
         $this->transactionIdTemplate = $transactionIdTemplate;
     }

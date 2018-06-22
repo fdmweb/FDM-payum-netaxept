@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PaymentInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <MerchantId>12000353</MerchantId>
+    <QueryFinished>2018-06-22T11:44:39.8056621+02:00</QueryFinished>
+    <TransactionId>dismahtransid</TransactionId>
+    <AuthenticationInformation />
+    <AvtaleGiroInformation />
+    <CardInformation>
+        <ExpiryDate>2201</ExpiryDate>
+        <Issuer>Visa</Issuer>
+        <IssuerCountry>NO</IssuerCountry>
+        <MaskedPAN>492500******0004</MaskedPAN>
+        <PaymentMethod>Visa</PaymentMethod>
+        <IssuerId>3</IssuerId>
+    </CardInformation>
+    <CustomerInformation>
+        <Address1 />
+        <Address2 />
+        <CompanyName />
+        <CompanyRegistrationNumber />
+        <CustomerNumber />
+        <Country />
+        <Email />
+        <FirstName />
+        <IP>87.48.129.98</IP>
+        <LastName />
+        <PhoneNumber />
+        <Postcode />
+        <SocialSecurityNumber />
+        <Town />
+    </CustomerInformation>
+    <ErrorLog />
+    <History>
+        <TransactionLogLine>
+            <DateTime>2018-06-22T11:35:40.637</DateTime>
+            <Description />
+            <Operation>Register</Operation>
+            <TransactionReconRef />
+        </TransactionLogLine>
+        <TransactionLogLine>
+            <BatchNumber>311</BatchNumber>
+            <DateTime>2018-06-22T11:41:56.9</DateTime>
+            <Description>87.48.129.98</Description>
+            <Operation>Auth</Operation>
+            <TransactionReconRef />
+        </TransactionLogLine>
+        <TransactionLogLine>
+            <Amount>99900</Amount>
+            <BatchNumber>311</BatchNumber>
+            <DateTime>2018-06-22T11:44:35.32</DateTime>
+            <Description>87.48.129.98</Description>
+            <Operation>Capture</Operation>
+            <TransactionReconRef />
+        </TransactionLogLine>
+    </History>
+    <OrderInformation>
+        <Amount>99900</Amount>
+        <Currency>DKK</Currency>
+        <Fee>0</Fee>
+        <OrderDescription> </OrderDescription>
+        <OrderNumber>80085</OrderNumber>
+        <Timestamp>2018-06-22T11:35:40.637</Timestamp>
+        <Total>99900</Total>
+        <RoundingAmount>0</RoundingAmount>
+    </OrderInformation>
+    <SecurityInformation>
+        <CustomerIPCountry>DK</CustomerIPCountry>
+        <IPCountryMatchesIssuingCountry>false</IPCountryMatchesIssuingCountry>
+    </SecurityInformation>
+    <Summary>
+        <AmountCaptured>99900</AmountCaptured>
+        <AmountCredited>0</AmountCredited>
+        <Annuled>false</Annuled>
+        <Annulled>false</Annulled>
+        <AuthorizationId>097113</AuthorizationId>
+        <Authorized>true</Authorized>
+    </Summary>
+    <TerminalInformation>
+        <Browser>Chrome-Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36</Browser>
+        <CustomerEntered>2018-06-22T11:41:40.710</CustomerEntered>
+        <CustomerRedirected>2018-06-22T11:41:50.663</CustomerRedirected>
+    </TerminalInformation>
+</PaymentInfo>

@@ -43,7 +43,8 @@ class CancelAction implements ActionInterface, ApiAwareInterface
         RequestNotSupportedException::assertSupports($this, $request);
 
         $model = ArrayObject::ensureArrayObject($request->getModel());
-        $this->api->processTransaction((array) $model, Api::OPERATION_CANCEL);
+
+        return $this->api->cancel((array) $model);
     }
 
     /**

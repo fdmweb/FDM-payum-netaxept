@@ -19,17 +19,14 @@ use Payum\Core\Action\ActionInterface;
 use Payum\Core\ApiAwareInterface;
 use Payum\Core\ApiAwareTrait;
 use Payum\Core\Exception\RequestNotSupportedException;
-use Payum\Core\GatewayAwareInterface;
-use Payum\Core\GatewayAwareTrait;
 use Webmozart\Assert\Assert;
 
 /**
  * @property Api $api
  */
-class GetTerminalUrlAction implements ActionInterface, ApiAwareInterface, GatewayAwareInterface
+class GetTerminalUrlAction implements ActionInterface, ApiAwareInterface
 {
     use ApiAwareTrait;
-    use GatewayAwareTrait;
 
     public function __construct()
     {

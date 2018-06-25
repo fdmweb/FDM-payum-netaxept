@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PaymentInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <MerchantId>12000353</MerchantId>
+    <QueryFinished>2018-06-22T11:35:51.7613556+02:00</QueryFinished>
+    <TransactionId>dismahtransid</TransactionId>
+    <AuthenticationInformation />
+    <AvtaleGiroInformation />
+    <CardInformation>
+        <MaskedPAN />
+    </CardInformation>
+    <CustomerInformation>
+        <Address1 />
+        <Address2 />
+        <CompanyName />
+        <CompanyRegistrationNumber />
+        <CustomerNumber />
+        <Country />
+        <Email />
+        <FirstName />
+        <LastName />
+        <PhoneNumber />
+        <Postcode />
+        <SocialSecurityNumber />
+        <Town />
+    </CustomerInformation>
+    <ErrorLog />
+    <History>
+        <TransactionLogLine>
+            <DateTime>2018-06-22T11:35:40.637</DateTime>
+            <Description />
+            <Operation>Register</Operation>
+            <TransactionReconRef />
+        </TransactionLogLine>
+    </History>
+    <OrderInformation>
+        <Amount>99900</Amount>
+        <Currency>DKK</Currency>
+        <Fee>0</Fee>
+        <OrderDescription> </OrderDescription>
+        <OrderNumber>80085</OrderNumber>
+        <Timestamp>2018-06-22T11:35:40.637</Timestamp>
+        <Total>99900</Total>
+        <RoundingAmount>0</RoundingAmount>
+    </OrderInformation>
+    <SecurityInformation>
+        <IPCountryMatchesIssuingCountry>true</IPCountryMatchesIssuingCountry>
+    </SecurityInformation>
+    <Summary>
+        <AmountCaptured>0</AmountCaptured>
+        <AmountCredited>0</AmountCredited>
+        <Annuled>false</Annuled>
+        <Annulled>false</Annulled>
+        <Authorized>false</Authorized>
+    </Summary>
+    <TerminalInformation>
+        <Browser />
+    </TerminalInformation>
+</PaymentInfo>

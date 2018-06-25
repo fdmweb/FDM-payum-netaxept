@@ -43,7 +43,8 @@ class CaptureAction implements ActionInterface, ApiAwareInterface
         RequestNotSupportedException::assertSupports($this, $request);
 
         $model = ArrayObject::ensureArrayObject($request->getModel());
-        $this->api->processTransaction((array) $model, Api::OPERATION_CAPTURE);
+
+        return $this->api->capture((array) $model);
     }
 
     /**

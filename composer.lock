@@ -60,16 +60,16 @@
         },
         {
             "name": "fdm/netaxept",
-            "version": "v1.0.1",
+            "version": "v1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/fdmweb/FDM-netaxept.git",
-                "reference": "36325ebc221b4e531c4032228d48db3ce6267e31"
+                "reference": "43a671801fe64b878d00af11583da3189ac30a7b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fdmweb/FDM-netaxept/zipball/36325ebc221b4e531c4032228d48db3ce6267e31",
-                "reference": "36325ebc221b4e531c4032228d48db3ce6267e31",
+                "url": "https://api.github.com/repos/fdmweb/FDM-netaxept/zipball/43a671801fe64b878d00af11583da3189ac30a7b",
+                "reference": "43a671801fe64b878d00af11583da3189ac30a7b",
                 "shasum": ""
             },
             "require": {
@@ -99,7 +99,7 @@
                 }
             ],
             "description": "Netaxept API integration package",
-            "time": "2018-06-20T13:20:47+00:00"
+            "time": "2018-06-21T08:26:15+00:00"
         },
         {
             "name": "guzzlehttp/guzzle",

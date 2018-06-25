@@ -51,7 +51,7 @@ ecsfix:
 
 phpstan: ## Invoke PHP static analysis on the src/ directory
 phpstan:
-	@vendor/bin/phpstan analyse -l max --no-interaction --no-progress -- src/ tests/
+	@vendor/bin/phpstan analyse -l max --no-interaction --no-progress -- src/
 
 test: ## Run tests
 test:

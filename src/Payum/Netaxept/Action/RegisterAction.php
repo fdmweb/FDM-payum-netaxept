@@ -20,16 +20,13 @@ use Payum\Core\ApiAwareInterface;
 use Payum\Core\ApiAwareTrait;
 use Payum\Core\Bridge\Spl\ArrayObject;
 use Payum\Core\Exception\RequestNotSupportedException;
-use Payum\Core\GatewayAwareInterface;
-use Payum\Core\GatewayAwareTrait;
 
 /**
  * @property Api $api
  */
-class RegisterAction implements ActionInterface, ApiAwareInterface, GatewayAwareInterface
+class RegisterAction implements ActionInterface, ApiAwareInterface
 {
     use ApiAwareTrait;
-    use GatewayAwareTrait;
 
     public function __construct()
     {
@@ -48,7 +45,10 @@ class RegisterAction implements ActionInterface, ApiAwareInterface, GatewayAware
         $model = ArrayObject::ensureArrayObject($request->getModel());
 
         $response = $this->api->registerTransaction((array) $model);
-        $request->setTransactionId($response->getTransactionId());
+        $transactionId = $response->getTransactionId();
+        $request->setTransactionId($transactionId);
+
+        return $transactionId;
     }
 
     /**

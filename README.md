@@ -4,7 +4,7 @@
 [![Build Status](https://api.travis-ci.com/fdmweb/FDM-payum-netaxept.png?branch=master)](https://travis-ci.org/fdmweb/FDM-payum-netaxept)
 [![Latest Stable Version](https://poser.pugx.org/fdm/payum-netaxept/version.png)](https://packagist.org/packages/fdm/payum-netaxept)
 [![codecov](https://codecov.io/gh/fdmweb/FDM-payum-netaxept/branch/master/graph/badge.svg)](https://codecov.io/gh/fdmweb/FDM-payum-netaxept)
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/fdmweb/FDM-payum-netaxept/badges/quality-score.png?b=develop)](https://scrutinizer-ci.com/g/fdmweb/FDM-payum-netaxept/?branch=develop)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/fdmweb/FDM-payum-netaxept/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/fdmweb/FDM-payum-netaxept/?branch=master)
 
 This project provides Payum with a Gateway wrapper around the NETS Netaxept API.
 
